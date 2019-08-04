@@ -1,4 +1,4 @@
-'strict'
+'use strict'
 
 // Déclaration de deux variables qui vont chacunes contenir le nom d'une équipe
 var equipe1 = prompt("Entrez le nom de la première équipe:")
