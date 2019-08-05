@@ -1,7 +1,7 @@
 'use strict'
 
-// Déclaration de la valeur saisie par le joueur humain.
-var user = prompt("Quel est votre choix entre: pierre, feuille, ou cisaux?")
+/* Déclaration de la valeur saisie par le joueur humain. */
+var user = prompt("Quel est votre choix entre: pierre, feuille, ou ciseaux?")
     user = user.toLowerCase()
     console.log(user)
     if(user != "pierre" && user != "feuille" && user != "ciseaux"){
