@@ -10,12 +10,12 @@ do{
 function addition(nb1,nb2){
     /* Déclaration d'une variable "total" qui va enregistrer le résultat de l'addition de "nb1" avec "nb2" */
     var total=nb1+nb2
-    /* je crée un "return" contenant le résultat de l'opération,
-    return ne renverra ce résultat que lorsque la fonction sera appelé depuis l'extérieur */
+    /* Déclaration d'un "return" qui enregistre la valeur de "total",
+    return nous renverra le "total" lorsque la fonction "addition(nb1,nb2)" sera appelée dans notre code*/
     return total 
 }
 
-/* je crée une variable pour y enregistré le résultat que la fonction "addition" va me retourner */
+/* Création d'une variable pour enregistrer le résultat que la fonction "addition" va nous retourner */
 var result = addition(nb1,nb2)
-/* je crée un message contenant le résultat de la fonction "addition" */
+/* Affichage dans la fenêtre web du calcul et de son résultat */
 document.write(result)
