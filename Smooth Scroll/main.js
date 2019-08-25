@@ -1,21 +1,14 @@
 function smoothScroll(targetToReach, durationAnim) {
   var targetToReach = document.querySelector(targetToReach);
-  console.log(targetToReach);
   var targetPosition = targetToReach.getBoundingClientRect().top;
-  console.log(targetPosition);
   var startPosition = window.pageYOffset;
-  console.log(startPosition);
   var distance = targetPosition - startPosition;
-  console.log(distance);
   var startTime = null;
-  console.log(startTime);
 
   function animation(currentTime) {
     if (startTime === null) {
       startTime = currentTime;
-      console.log(startTime);
       var timeElapsed = currentTime - startTime;
-      console.log(timeElapsed);
       var run = ease(timeElapsed, startPosition, distance, durationAnim);
       window.scrollTo(0, run);
       if (timeElapsed < durationAnim) {
@@ -39,9 +32,9 @@ var section1 = document.querySelector(".section1");
 var section2 = document.querySelector(".section2");
 
 section1.addEventListener("click", function() {
-  smoothScroll(".section2", 2000);
+  smoothScroll(".section2", 1000);
 });
 
 section2.addEventListener("click", function() {
-  smoothScroll(".section1", 2000);
+  smoothScroll(".section1", 1000);
 });
