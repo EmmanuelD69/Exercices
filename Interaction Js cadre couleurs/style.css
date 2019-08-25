@@ -1,0 +1,27 @@
+.rectangle{
+    background-color: royalblue;
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#toggle-rectangle{
+    padding: 15px;
+}
+
+.important {
+    background-color: firebrick;
+}
+
+.good {
+    background-color: limegreen;
+}
+
+.hide {
+    display:none;
+}
