@@ -45,6 +45,10 @@ textarea {
 
   /* Pour donner assez de place pour écrire du texte */
   height: 5em;
+
+  /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+     Cela ne marche pas avec tous les navigateurs  */
+  resize: vertical;
 }
 
 .button {
