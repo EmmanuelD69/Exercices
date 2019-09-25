@@ -7,11 +7,23 @@ nav ul {
       justify-content: space-around;
 }
 
+.menu {
+  background-color: #9f8edd;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
 .submenu {
   display: none;
 }
 
-li:hover .submenu {
+#menu1 ul:hover {
   display: contents;
+}
+
+.menu1 li:hover {
+  background-color: #b17a48;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,10 +4,21 @@ nav ul {
   justify-content: space-around;
 }
 
+.menu {
+  background-color: rgb(159, 142, 221);
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
 .submenu {
   display: none;
 }
 
-li:hover .submenu {
+#menu1 ul:hover {
   display: contents;
+}
+
+.menu1 li:hover {
+  background-color: rgb(177, 122, 72);
 }
