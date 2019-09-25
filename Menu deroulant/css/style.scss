@@ -1,0 +1,13 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.submenu {
+  display: none;
+}
+
+li:hover .submenu {
+  display: contents;
+}
