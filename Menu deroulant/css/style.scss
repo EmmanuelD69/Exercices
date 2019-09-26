@@ -1,7 +1,11 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
+  background: red;
 }
 
 .menu {
@@ -29,4 +33,6 @@ nav ul {
 
 .submenu li:hover {
   background-color: rgb(177, 122, 72);
+  box-sizing: content-box;
+  width: 100%;
 }

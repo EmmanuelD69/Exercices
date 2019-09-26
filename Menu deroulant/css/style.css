@@ -1,10 +1,15 @@
-nav ul {
-  list-style: none;
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  background: red;
 }
 
 .menu {
@@ -33,5 +38,8 @@ nav ul {
 
 .submenu li:hover {
   background-color: #b17a48;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
