@@ -19,11 +19,19 @@ nav ul {
   display: none;
 }
 
-#menu1 ul:hover {
+#menu1:hover > #submenu1 {
   display: contents;
 }
 
-.menu1 li:hover {
+#menu2:hover > #submenu2 {
+  display: contents;
+}
+
+#menu3:hover > #submenu3 {
+  display: contents;
+}
+
+.submenu li:hover {
   background-color: #b17a48;
 }
 /*# sourceMappingURL=style.css.map */
