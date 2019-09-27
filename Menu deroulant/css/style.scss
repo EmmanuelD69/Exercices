@@ -1,19 +1,19 @@
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav ul {
   list-style: none;
-  background: red;
 }
 
 .menu {
-  background-color: rgb(159, 142, 221);
+  background-color: rgb(26, 26, 29);
   width: 100px;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  color: aliceblue;
 }
 .submenu {
   display: none;
@@ -32,6 +32,7 @@ nav ul {
 }
 
 .submenu li:hover {
+  transition-duration: 0.5s;
   background-color: rgb(177, 122, 72);
   box-sizing: content-box;
   width: 100%;

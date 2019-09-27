@@ -2,22 +2,21 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 nav ul {
   list-style: none;
-  background: red;
 }
 
 .menu {
-  background-color: #9f8edd;
+  background-color: #1a1a1d;
   width: 100px;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  color: aliceblue;
 }
 
 .submenu {
@@ -37,6 +36,8 @@ nav ul {
 }
 
 .submenu li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background-color: #b17a48;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
