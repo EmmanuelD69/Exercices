@@ -3,36 +3,32 @@ body {
 }
 
 main {
-  height: 100vh;
-  width: 200vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 #div1 {
-  width: 98vh;
-  height: 48vh;
-  background-color: aqua;
-  margin: 5px;
+  background-color: rgb(63, 197, 197);
 }
 
 #div2 {
-  width: 98vh;
-  height: 48vh;
-  background-color: rgb(0, 255, 55);
-  margin: 5px;
+  background-color: rgb(62, 209, 94);
 }
 
 #div3 {
-  width: 98vh;
-  height: 48vh;
-  background-color: rgb(251, 255, 0);
-  margin: 5px;
+  background-color: rgb(252, 227, 0);
 }
 
 #div4 {
-  width: 98vh;
+  background-color: rgb(184, 54, 134);
+}
+
+.box {
+  width: 49%;
   height: 48vh;
-  background-color: rgb(255, 0, 157);
-  margin: 5px;
+  margin: 3px;
+  text-align: center;
 }
