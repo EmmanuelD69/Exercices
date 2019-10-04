@@ -49,13 +49,13 @@ main {
   z-index: 1;
   opacity: 1;
   transition-property: z-index, color, opacity;
-  transition-duration: 7s, 1s, 3s;
+  transition-duration: 6s, 1s, 2s;
 }
 
 .title:hover {
   color: black;
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .overlay {
@@ -68,5 +68,5 @@ main {
   color: white;
   font-size: 3em;
   position: absolute;
-  opacity: 0.8;
+  opacity: 1;
 }
