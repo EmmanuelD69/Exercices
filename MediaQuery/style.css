@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+#top {
+  width: 100%;
+  margin: auto;
+  height: 20vh;
+}
+
+#middle {
+  width: 100%;
+  margin: auto;
+  height: 60vh;
+}
+
+#bottom {
+  width: 100%;
+  margin: auto;
+  height: 20vh;
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 2048px) {
+  #top {
+    background: rgb(59, 59, 145);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+  #top::after {
+    content: "1025 - 2048";
+  }
+
+  #middle {
+    background: rgb(240, 172, 84);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  #bottom {
+    background: rgb(255, 84, 22);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #top {
+    background: blue;
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+  #top::after {
+    content: "768 - 1024";
+  }
+
+  #middle {
+    background: burlywood;
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  #bottom {
+    background: coral;
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  #top {
+    background: rgb(143, 143, 218);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+  #top::after {
+    content: "320 - 767";
+  }
+
+  #middle {
+    background: rgb(240, 212, 177);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  #bottom {
+    background: rgb(255, 170, 140);
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+  }
+}
