@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horizontal page scrolling</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="section">
+            <div class="content ST1">
+                <div class="text">
+                    <h1>Section one</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem modi quae eaque,
+                        facilis neque hic corporis ex? Nesciunt illum modi inventore quia quidem asperiores quasi ullam,
+                        culpa id animi.</p>
+                </div>
+                <img src="ST1.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="content ST2">
+                <div class="text">
+                    <h1>Section two</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem modi quae eaque,
+                        facilis neque hic corporis ex? Nesciunt illum modi inventore quia quidem asperiores quasi ullam,
+                        culpa id animi.</p>
+                </div>
+                <img src="ST2.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="content ST3">
+                <div class="text">
+                    <h1>Section three</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem modi quae eaque,
+                        facilis neque hic corporis ex? Nesciunt illum modi inventore quia quidem asperiores quasi ullam,
+                        culpa id animi.</p>
+                </div>
+                <img src="ST3.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="content ST4">
+                <div class="text">
+                    <h1>Section four</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorem modi quae eaque,
+                        facilis neque hic corporis ex? Nesciunt illum modi inventore quia quidem asperiores quasi ullam,
+                        culpa id animi.</p>
+                </div>
+                <img src="ST4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+            value = (scroll / (dh - wh)) * 100;
+            $('#container').css('left', - value * 3 + '%');
+        })
+    </script>
+</body>
+
+</html>
