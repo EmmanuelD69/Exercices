@@ -16,6 +16,7 @@ body {
   display: flex; /* l'affichage se fait en flex, et les div contenues dans le cadre s'affiche par défault en ligne */
 }
 
+/* Section comprenant un titre, un paragraphe et une image */
 #container .section {
   position: relative;
   width: 100%;
@@ -27,31 +28,41 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* couleur de fond de la section 1 */
 #container .section .ST1 {
   background: #4f1f1a;
 }
 
+/* couleur de fond de la section 2 */
 #container .section .ST2 {
   background: #d20731;
 }
+
+/* couleur de fond de la section 3 */
 #container .section .ST3 {
   background: #e29335;
 }
+
+/* couleur de fond de la section 4 */
 #container .section .ST4 {
   background: #dda790;
 }
 
+/* Contenu de chaque sections */
 #container .section .content {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1200px; /* taille de la fenetre de contenu */
+  display: flex; /* éléments dans la fenêtre de contenu disposé en flex */
+  justify-content: center; /* alignement horizontal */
+  align-items: center; /* alignement vertical */
 }
 
+/* ensemble titre + paragraphe */
 #container .section .content .text {
   padding: 50px;
 }
 
+/* titres */
 #container .section .content .text h1 {
   margin: 0;
   padding: 0;
@@ -59,11 +70,13 @@ body {
   color: #151515;
 }
 
+/* paragraphes */
 #container .section .content .text p {
   font-size: 1.1em;
   color: whitesmoke;
 }
 
+/* images */
 #container .section .content img {
   max-width: 400px;
 }
