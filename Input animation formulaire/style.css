@@ -1,5 +1,5 @@
 body {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,20 +16,31 @@ span {
 .form {
   width: 50%;
   position: relative;
-  height: 50px;
+  height: auto;
+  overflow: hidden;
   /* background: crimson; */
 }
 
-.form input {
+/* Name */
+.form-name {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background: crimson;
+}
+
+.form-name input {
   width: 100%;
   height: 100%;
   color: rgb(120, 120, 224);
-  padding-top: 10px;
+  padding-top: 30px;
   border: none;
+  outline: none;
   /* background: cadetblue; */
 }
 
-.form label {
+.form-name label {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -40,28 +51,158 @@ span {
   border-bottom: 1px solid black;
 }
 
-.form label::after {
+.form-name label::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0px;
   width: 100%;
   height: 100%;
   border-bottom: 3px solid rgb(60, 123, 160);
   /* background: burlywood; */
   transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
-.content-name {
+.form-name .content-name {
   position: absolute;
   bottom: 5px;
   left: 0px;
   transition: all 0.3s ease;
 }
 
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name {
+.form-name input:focus + .label-name .content-name,
+.form-name input:valid + .label-name .content-name {
   transform: translateY(-150%);
   font-size: 14px;
   color: #5fa8d3;
+}
+
+.form-name input:focus + .label-name::after,
+.form-name input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+/* Surname */
+.form-surname {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  /* background: crimson; */
+}
+
+.form-surname input {
+  width: 100%;
+  height: 100%;
+  color: rgb(120, 120, 224);
+  padding-top: 30px;
+  border: none;
+  outline: none;
+  /* background: cadetblue; */
+}
+
+.form-surname label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /* background: blueviolet; */
+  pointer-events: none; /* permet l'accès à l'input, le label n'étant plus pris en compte au dessus de l'input */
+  border-bottom: 1px solid black;
+}
+
+.form-surname label::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid rgb(60, 123, 160);
+  /* background: burlywood; */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form-surname .content-surname {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form-surname input:focus + .label-surname .content-surname,
+.form-surname input:valid + .label-surname .content-surname {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form-surname input:focus + .label-surname::after,
+.form-surname input:valid + .label-surname::after {
+  transform: translateX(0%);
+}
+
+/* Email */
+.form-email {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background: crimson;
+}
+
+.form-email input {
+  width: 100%;
+  height: 100%;
+  color: rgb(120, 120, 224);
+  padding-top: 30px;
+  border: none;
+  outline: none;
+  /* background: cadetblue; */
+}
+
+.form-email label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /* background: blueviolet; */
+  pointer-events: none; /* permet l'accès à l'input, le label n'étant plus pris en compte au dessus de l'input */
+  border-bottom: 1px solid black;
+}
+
+.form-email label::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid rgb(60, 123, 160);
+  /* background: burlywood; */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form-email .content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form-email input:focus + .label-email .content-email,
+.form-email input:valid + .label-email .content-email {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form-email input:focus + .label-email::after,
+.form-email input:valid + .label-email::after {
+  transform: translateX(0%);
 }
