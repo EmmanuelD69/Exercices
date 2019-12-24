@@ -1,18 +1,19 @@
 "use strict";
+var budgetName;
+var budgetMontant;
+var spentName;
+var spentMontant;
+var totalSpent;
 
 /* fonction ayant pour but de demander le nom du budget */
 function budget() {
-  let budgetName = window.prompt(
-    "Quel nom voulez vous attribuer à votre Budget?"
-  );
+  budgetName = window.prompt("Quel nom voulez vous attribuer à votre Budget?");
   document.write("<h2>" + budgetName + "</h2>");
 }
 
 /* fonction ayant pour but de demander le montant du budget */
 function askBudget() {
-  let budgetMontant = parseInt(
-    window.prompt("A combien se monte votre budget?")
-  );
+  budgetMontant = parseInt(window.prompt("A combien se monte votre budget?"));
   /* si la saisie ne correspond pas à un chiffre, elle est demandée à nouveau */
   if (isNaN(budgetMontant)) {
     alert("Votre saisie est incorrecte, veuillez saisir un chiffre.");
@@ -27,12 +28,10 @@ function askBudget() {
 
 /* fonction ayant pour but de demander le nom et le montant d'une dépense */
 function spent() {
-  let spentName = window.prompt(
-    "Quel nom voulez vous attribuer à cette dépense?"
-  );
+  spentName = window.prompt("Quel nom voulez vous attribuer à cette dépense?");
   document.write("<h2>" + spentName + "</h2>");
 
-  let spentMontant = parseInt(
+  spentMontant = parseInt(
     window.prompt("Quel est le montant de cette dépense?")
   );
 
@@ -46,11 +45,20 @@ function spent() {
   document.write("<h2>" + spentMontant + "€ </h2>");
 }
 
+/* fonction ayant pour but de calculer le montant disponible restant dans le budget */
+function total() {
+  totalSpent = budgetMontant - spentMontant;
+  document.write(
+    "<h1>Il vous reste " + totalSpent + "€ dans votre budget</h1>"
+  );
+}
+
 /* c'est la fonction principale qui rassemble l'ensemble des fonction dans l'ordre prévu */
 function init() {
   budget();
   askBudget();
   spent();
+  total();
 }
 
 /* on lance la fonction init au chargement du DOM */
