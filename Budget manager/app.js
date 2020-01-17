@@ -6,7 +6,7 @@ var spentMontant;
 var totalSpent;
 
 /* fonction ayant pour but de demander le nom du budget */
-function budget() {
+function nomBudget() {
   budgetName = window.prompt("Quel nom voulez vous attribuer à votre Budget?");
   document.write("<h2>" + budgetName + "</h2>");
 }
@@ -55,7 +55,7 @@ function total() {
 
 /* c'est la fonction principale qui rassemble l'ensemble des fonction dans l'ordre prévu */
 function init() {
-  budget();
+  nomBudget();
   askBudget();
   spent();
   total();
